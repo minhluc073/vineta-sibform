@@ -178,8 +178,42 @@
             }
         }
     }
+    &.bg-violet-3 {
+        .overflow-hidden {
+            &::before {
+                background: linear-gradient(to right, #591399, transparent);
+            }
+            &::after {
+                background: linear-gradient(to left, #591399, transparent);
+            }
+        }
+    }
+    &.bg-dark-green-7 {
+        .overflow-hidden {
+            &::before {
+                background: linear-gradient(to right, #219913, transparent);
+            }
+            &::after {
+                background: linear-gradient(to left, #219913, transparent);
+            }
+        }
+    }
+    &.bg-brown-18 {
+        .overflow-hidden {
+            &::before {
+                background: linear-gradient(to right, #995413, transparent);
+            }
+            &::after {
+                background: linear-gradient(to left, #995413, transparent);
+            }
+        }
+    }
+    .js-countdown .countdown__value {
+        min-width: 17px;
+        display: inline-block;
+        text-align: end;
+    }
 }
-
 .topbar-wraper {
     display: flex;
     align-items: center;
@@ -370,7 +404,7 @@
             &.style-2 {
                 .count-box {
                     position: unset;
-                    background-color: #4A7E4B;
+                    background-color: #4a7e4b;
                     margin: 0;
                     width: 21px;
                     height: 21px;

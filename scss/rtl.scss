@@ -169,6 +169,7 @@
     .modal-quick-view .tf-product-info-wrap .view-details .icon,
     .s-cls.abs-left-center .image img,
     .blog-item-v2 .entry-content .btn-readmore .icon-arr-right,
+    .tf-btn svg,
     .tf-btn .icon-arr-right3,
     .tf-btn .icon-arr-right {
         transform: rotate(180deg);
@@ -234,9 +235,13 @@
     .footer-default .form-newsletter {
         .button-submit {
             left: 2px;
-            right: unset;
-            .subscribe-button {
+            right: unset !important;
+            .subscribe-button svg,
+            .subscribe-button .icon {
                 transform: rotate(180deg);
+            }
+            &.end-0 {
+                left: 0;
             }
         }
     }

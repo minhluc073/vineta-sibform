@@ -343,6 +343,17 @@
             font-size: 20px;
         }
     }
+    &.btn-purple-1 {
+        background-color: #8600DF;
+    }
+    &.btn-purple-2 {
+        background-color: #A304FF;
+        border-color: #A304FF;
+        &:hover {
+            background-color: #fff;
+            color: #A304FF;
+        }
+    }
 }
 .btn-out-stock {
     opacity: 0.5;

@@ -12,13 +12,17 @@
     }
     .form-newsletter {
         max-width: 401px;
-        position: relative;
         .subscribe-button {
             padding: 13px;
             border-radius: 50%;
-            display: inline-flex;
             .icon {
                 font-size: 17px;
+            }
+            &.bg-purple-1 {
+                background-color: #A304FF;
+                border: 0;
+                padding-left: 30px;
+                padding-right: 30px;
             }
         }
     }
@@ -50,9 +54,6 @@
             background-color: #444444;
         }
     }
-
-
-    
 }
 .footer-logo {
     max-width: 157px;

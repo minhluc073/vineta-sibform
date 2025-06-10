@@ -159,25 +159,7 @@
         }
     }
 }
-.slider-fashion-1 {
-    .image {
-        img {
-            width: unset;
-        }
-    }
-    .slider-wrap {
-        &.bg-type-2 {
-            .image {
-                display: flex;
-                justify-content: end;
-                img {
-                    height: unset;
-                    // margin-right: 180px;
-                }
-            }
-        }
-    }
-}
+
 
 @keyframes spin-border {
     0% {
@@ -427,5 +409,20 @@
         font-size: 80px;
         line-height: 110.00000000000001%;
         text-transform: capitalize;
+    }
+}
+
+.slider-supplement {
+    margin: 0px 15px;
+    .wrap-pagination {
+        bottom: 25px;
+    }
+    .tf-btn {
+        .icon {
+            font-size: 12px;
+        }
+    }
+    .content-slider {
+        gap: 40px;
     }
 }

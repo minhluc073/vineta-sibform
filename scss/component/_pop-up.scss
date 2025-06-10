@@ -1128,18 +1128,12 @@
 
     .modal-content {
         border-radius: 16px;
-        .form-newsletter {
-            input {
-                background-color: transparent;
-                padding-left: 66px;
-                padding-right: 20px;
-                border-radius: 49px;
-                border-color: var(--line);
-                font-weight: 400;
-            }
+    }
+    .form-newsletter {
+        input {
+            background-color: transparent;
         }
     }
-
     .modal-top {
         img {
             width: 100%;
@@ -1216,6 +1210,10 @@
                 font-size: 17px;
             }
         }
+    }
+
+    .sib-form .form-newsletter fieldset .input {
+        padding-left: 66px !important;
     }
 }
 

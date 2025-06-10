@@ -18,6 +18,9 @@
     grid-template-columns: 1fr 1fr;
    
 }
+.grid-cls-v6 {
+    grid-template-columns: 1fr;
+}
 .wg-cls {
     display: grid;
     gap: 20px;
@@ -454,6 +457,15 @@
         .content {
             left: 15px;
             bottom: 15px;
+        }
+    }
+    &.abs-top-center {
+        .content {
+            bottom: unset !important;
+            right: 15px;
+            left: 15px;
+            top: 15px;
+            gap: 15px;
         }
     }
 }

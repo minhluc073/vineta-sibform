@@ -2,7 +2,6 @@
 
 .brand-item {
     max-width: 240px;
-    height: 114px;
     @include transition3;
     img{
         @include transition3;
@@ -47,7 +46,6 @@
         background: linear-gradient(to left, #ffffff, transparent);
     }
 }
-
 .sw-brand {
     border: 1px solid var(--line);
     .brand-item {

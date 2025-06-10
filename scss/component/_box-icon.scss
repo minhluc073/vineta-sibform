@@ -299,6 +299,13 @@
             line-height: 18px;
         }
     }
+    &.w56 .box-icon {
+        width: 56px;
+        height: 56px;
+        .icon {
+            font-size: 22px;
+        }
+    }
 }
 
 .tf-icon-box-v2 {
