@@ -3397,20 +3397,95 @@
                     <p class="text text-sm text-main">Be the first to get the latest news about trends, <br> promotions,
                         and much more!</p>
 
-                    <form id="subscribe-form" action="#" class="form-newsletter" method="post" accept-charset="utf-8"
-                        data-mailchimp="true">
-                        <div id="subscribe-content">
-                            <fieldset class="email position-relative mb_20">
-                                <i class="icon icon-mail"></i>
-                                <input type="email" name="email-form" id="subscribe-email" class=""
-                                    placeholder="Your email address" tabindex="0" aria-required="true" required="">
-                            </fieldset>
-                            <button id="subscribe-button"
-                                class="subscribe-button tf-btn animate-btn d-inline-flex bg-dark-2 w-100"
-                                type="button">Send</button>
+                        <div class="sib-form">
+                            <div id="sib-form-container" class="sib-form-container">
+                                <div id="error-message" class="sib-form-message-panel">
+                                    <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                        <span class="sib-form-message-panel__inner-text">Your subscription could not be
+                                            saved. Please try again.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="success-message" class="sib-form-message-panel">
+                                    <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                        <span class="sib-form-message-panel__inner-text">Your subscription has been
+                                            successful.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="sib-container" class="sib-container--large sib-container--vertical">
+                                    <form id="sib-form" class="form-newsletter" method="POST"
+                                        action="https://3c02c1a1.sibforms.com/serve/MUIFAJqAmJ1r-9-6oGaX4uoBvwP0hlwYezUpuGWNLMl1Fd26Yuqeza4itBfViudv3o5IiTs34IhyGGpR3u821lD5dVskLiPw6XN9KtRy5CvmDj75857141ERQ9FKXtHPty7V8KYAUgKgTOv906xqY0rEG_reNR88R8xpH0aoS6WQ-5lXA1_ZioeDYB9dOJu11g7EJLdgHAieoeK5"
+                                        data-type="subscription">
+                                        <div>
+                                            <div class="sib-form-block">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="sib-form-block">
+                                                <div class="sib-text-form-block">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="sib-input sib-form-block mb_20">
+                                                <div class="form__entry entry_block">
+                                                    <div class="form__label-row ">
+                                                        <label class="entry__label" for="EMAIL"></label>
+                                                        <fieldset class="entry__field">
+                                                            <i class="icon icon-mail"></i>
+                                                            <input class="input " type="text" id="EMAIL" name="EMAIL"
+                                                                autocomplete="off" placeholder="Your email address"
+                                                                data-required="true" required />
+                                                        </fieldset>
+                                                    </div>
+                                                    <label class="entry__error entry__error--primary"></label>
+                                                    <label class="entry__specification"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="sib-optin sib-form-block">
+                                                <div class="form__entry entry_mcq">
+                                                    <div class="form__label-row ">
+                                                        <div class="entry__choice">
+                                                            <label>
+                                                                <input type="checkbox" class="input_replaced" value="1"
+                                                                    id="OPT_IN" name="OPT_IN" />
+                                                                <span class="checkbox checkbox_tick_positive"></span>
+                                                                <span>
+                                                                    <p></p>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <label class="entry__error entry__error--primary"></label>
+                                                    <label class="entry__specification"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="sib-form-block">
+                                                <button
+                                                    class="subscribe-button tf-btn animate-btn bg-dark-2 animate-btn sib-form-block__button sib-form-block__button-with-loader btn-style-2 radius-12 w-100 justify-content-center"
+                                                    form="sib-form" type="submit">
+                                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                        viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                    </svg>
+                                                    <span>Send</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="text" name="email_address_check" value="" class="input--hidden">
+                                        <input type="hidden" name="locale" value="en">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div id="subscribe-msg"></div>
-                    </form>
 
                     <ul class="tf-social-icon style-default justify-content-center">
                         <li><a href="https://x.com/" class="social-x"><i class="icon icon-x"></i></a></li>

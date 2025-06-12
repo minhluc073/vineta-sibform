@@ -22885,7 +22885,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-right: 0px;
 }
 .rtl .sib-form .form-newsletter button {
-  left: 4px;
+  left: 0px;
   right: unset;
 }
 
