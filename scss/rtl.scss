@@ -227,22 +227,25 @@
     .icon-arrow-top-left {
         transform: rotate(-90deg);
     }
+     .tf-btn.hover-icon-2 {
+        flex-direction: row-reverse;
+    }
     .tf-btn.hover-icon-2 .icon {
-        transform: scale(0) rotate(-90deg);
+        transform: scale(0) rotateY(-180deg);
     }
     .tf-btn.hover-icon-2:hover .icon {
-        transform: scale(1) rotate(-90deg);
+        transform: scale(1) rotateY(-180deg);
         margin-right: 10px;
         margin-left: 0px;
     }
     .wg-cls {
         .hover-icon-2 {
             .icon {
-                transform: scale(0) rotate(-90deg);
+                transform: scale(0) rotateY(-180deg);
             }
             &:hover{
                 .icon {
-                    transform: scale(1) rotate(-90deg);
+                    transform: scale(1) rotateY(-180deg);
                 }
             }
             

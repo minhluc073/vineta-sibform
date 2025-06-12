@@ -22555,19 +22555,22 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .rtl .icon-arrow-top-left {
   transform: rotate(-90deg);
 }
+.rtl .tf-btn.hover-icon-2 {
+  flex-direction: row-reverse;
+}
 .rtl .tf-btn.hover-icon-2 .icon {
-  transform: scale(0) rotate(-90deg);
+  transform: scale(0) rotateY(-180deg);
 }
 .rtl .tf-btn.hover-icon-2:hover .icon {
-  transform: scale(1) rotate(-90deg);
+  transform: scale(1) rotateY(-180deg);
   margin-right: 10px;
   margin-left: 0px;
 }
 .rtl .wg-cls .hover-icon-2 .icon {
-  transform: scale(0) rotate(-90deg);
+  transform: scale(0) rotateY(-180deg);
 }
 .rtl .wg-cls .hover-icon-2:hover .icon {
-  transform: scale(1) rotate(-90deg);
+  transform: scale(1) rotateY(-180deg);
 }
 .rtl .tf-mini-cart-tool-openable.estimate-shipping select {
   padding-left: 24px;
