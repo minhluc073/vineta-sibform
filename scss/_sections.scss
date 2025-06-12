@@ -325,7 +325,14 @@
             color: #8f6dff;
         }
     }
-
+    &.gap-15 {
+        .countdown__timer {
+            gap: 15px;
+        }
+        .countdown__item:not(:last-child) .countdown__value::after {
+            right: -8px;
+        }
+    }
     .countdown__value {
         padding-top: 0px;
         font-family: $font-6;
@@ -372,7 +379,7 @@
     padding-top: 80px;
     padding-bottom: 100px;
     .title {
-        margin-bottom: 12px;
+        margin-bottom: 18px;
     }
     .sub {
         margin-bottom: 48px;
@@ -487,7 +494,7 @@
         margin-bottom: 8px;
     }
     .contact-list {
-        gap: 0px;
+        gap: 5px;
         margin-bottom: 20px;
     }
     &:hover {
@@ -1133,6 +1140,11 @@
         display: grid;
         gap: 10px;
     }
+    .price-wrap {
+        .price-new {
+            color: var(--primary) ;
+        }
+    }
 }
 .tf-compare-field,
 .tf-compare-value {
@@ -1494,5 +1506,11 @@
                 border-bottom: 0;
             }
         }
+    }
+}
+
+.pickleball-product {
+    .tf-product-media-thumbs .swiper-slide.swiper-slide-thumb-active .item::after {
+        border-color: rgba(0, 0, 0,1);
     }
 }

@@ -149,14 +149,14 @@
 
 .menu-tab-line {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     overflow-x: auto;
     overflow-y: hidden;
     .tab-link {
         padding: 4px;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19.2px;
+        font-size: 22px;
+        line-height: 26px;
         color: var(--text);
         display: block;
         position: relative;
@@ -202,6 +202,11 @@
             &.active {
                 color: #df3c01;
             }
+        }
+    }
+    &.style-lg3 {
+        .tab-link::after {
+            height: 3px;
         }
     }
     &.style-md2 {

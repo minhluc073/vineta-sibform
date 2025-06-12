@@ -1071,6 +1071,12 @@
     function checkEmpty() {
       var $wishlistInner = $(".wrapper-wishlist");
       var productCount = $(".wrapper-wishlist .card-product").length;
+      
+      if (productCount === 0) {
+        $(".section-viewed").show();
+      } else {
+        $(".section-viewed").hide();
+      }
   
       if (productCount <= 8) {
         $(".wrapper-wishlist .wg-pagination").hide();

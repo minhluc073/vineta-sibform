@@ -716,7 +716,7 @@
     .wrapper-thumbs-tes-3 {
         display: flex;
         .box-right {
-            width: 37%;
+            width: 36%;
             display: block;
         }
         .box-left {
@@ -1123,6 +1123,11 @@
                 width: 100%;
             }
         }
+        &.type-1 {
+            .content-top {
+                padding-top: 24px;
+            }
+        }
     }
     .card-product {
         &.style-wishlist > .icon {
@@ -1161,14 +1166,20 @@
                 bottom: 40px;
             }
             &.type-2 {
-                .cls-content,
-                .cls-btn {
+                .cls-content {
                     bottom: 24px;
+                }
+                .cls-btn {
+                    bottom: 40px;
                 }
                 .cls-content {
                     gap: 24px;
                     left: 24px;
                     right: 24px;
+                }
+                .tf-btn {
+                    font-size: 24px;
+                    line-height: 34px;
                 }
             }
             &.type-3 {
@@ -1192,6 +1203,9 @@
             gap: 24px;
         }
         &.banner-text-skincare {
+            .hover-shine {
+                max-width: 619px;
+            }
             .content-banner {
                 gap: 32px;
             }
@@ -1201,6 +1215,19 @@
             &.type-2 {
                 .box-title-banner {
                     gap: 10px;
+                }
+            }
+            &.space-1 {
+                .content-banner {
+                    gap: 60px;
+                    .box-title-banner {
+                        gap: 6px;
+                    }
+                    h3 {
+                        font-size: 64px;
+                        line-height: 72px;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
@@ -1389,6 +1416,10 @@
                 font-size: 20px;
                 line-height: 20px;
             }
+            .fs-24 {
+                font-size: 24px;
+                line-height: 34px;
+            }
         }
         &.style-4 {
             padding: 32px 24px;
@@ -1488,6 +1519,17 @@
 }
 
 @media (min-width: 1200px) {
+    .pickleball-product {
+        .product-thumbs-slider {
+            gap: 15px;
+            .tf-product-media-thumbs {
+                width: 139px;
+            }
+            .flat-wrap-media-product {
+                width: calc(100% - 139px);
+            }
+        }
+    }
     .xl-radius-40 {
         border-radius: 40px !important;
     }
@@ -1978,6 +2020,9 @@
         &.mb_5 {
             margin-bottom: 52px;
         }
+        &.mb_6 {
+            margin-bottom: 72px;
+        }
     }
     .flat-title-tab-categories {
         margin-bottom: 42px;
@@ -2301,7 +2346,7 @@
     }
     .banner-text-skincare {
         .content-banner {
-            padding-left: 108px;
+            padding-left: 90px;
         }
     }
     .tf-filter-dropdown,
@@ -2928,6 +2973,52 @@
     }
 }
 @media (min-width: 1440px) {
+    .wrapper-lookbook-1 {
+        .col-right {
+            width: 49.31%;
+        }
+        &.type-1 {
+            .slider-wrap-lb {
+                max-width: 474px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .banner-furniture2 {
+        .banner-content {
+            padding: 48px 64px;
+            gap: 60px;
+        }
+    }
+    .grid-cls-v2 {
+        &.type-1 {
+            .item3 {
+                min-height: 435px;
+            }
+        }
+    }
+    .slider-furniture2 {
+        .content-slider {
+            padding: 48px 64px !important;
+            gap: 60px;
+            .box-title {
+                gap: 16px;
+                .title {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .slider-pickleball {
+        .content-slider {
+            gap: 60px;
+        }
+        .box-title-slider .heading {
+            font-size: 94px;
+            line-height: 104px;
+        }
+    }
     .s-cls.abs-top-center .content {
         right: 40px;
         left: 40px;
@@ -3189,6 +3280,9 @@
                     width: 70px;
                     height: 50px;
                 }
+                &.active {
+                    padding: 30px 0;
+                }
             }
         }
     }
@@ -3219,6 +3313,10 @@
 }
 
 @media (max-width: 1199px) {
+    .wrapper-thumbs-tes-3.type-1 .box-left {
+        padding-right: 0;
+        padding-left: 40px;
+    }
     .pb_xl-0 {
         padding-bottom: 0 !important;
     }
@@ -3441,10 +3539,11 @@
         font-size: 22px;
         line-height: 30px;
     }
+    .flat-spacing-35,
     .flat-spacing-33,
     .flat-spacing-3 {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 75px;
+        padding-bottom: 75px;
     }
     .flat-spacing-6,
     .flat-spacing {
@@ -3734,6 +3833,15 @@
 }
 
 @media (max-width: 767px) {
+    .wrapper-lookbook-1.type-1 .col-left {
+        padding-top: 24px;
+    }
+    .wrapper-thumbs-tes-3.type-1 .box-left {
+        padding-left: 0px;
+    }
+    .box-store .bot .tf-btn {
+        font-size: 16px;
+    }
     .md-px-0 {
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -4223,10 +4331,12 @@
                     border: none;
                 }
                 li {
+                    .quickview {
+                        border-radius: 0 30px 30px 0 !important;
+                    }
                     &:first-child {
                         .box-icon {
                             border-right: 1px solid var(--line);
-                            border-left-color: var(--white);
                         }
                     }
                 }
@@ -4407,7 +4517,7 @@
         }
         .faq-item {
             &:not(:last-child) {
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
         }
     }
@@ -4633,6 +4743,7 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    .flat-spacing-35,
     .flat-spacing-33,
     .flat-spacing-3 {
         padding-top: 60px;
@@ -4953,7 +5064,7 @@
             gap: 10px;
         }
         .countdown__item {
-            width: 60px;
+            width: 70px;
             height: 70px;
         }
         .countdown__value {

@@ -1211,10 +1211,6 @@
             }
         }
     }
-
-    .sib-form .form-newsletter fieldset .input {
-        padding-left: 66px !important;
-    }
 }
 
 // popup-search
@@ -1418,6 +1414,7 @@
             right: 12px;
             width: 48px;
             height: 48px;
+            font-size: 12px;
             border: 1px solid var(--line);
             background-color: var(--white);
             border-radius: 50%;

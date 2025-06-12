@@ -923,6 +923,9 @@ video {
 .bg-dark-green-7 {
     background-color: #219913 !important;
 }
+.bg-dark-green-8 {
+    background-color: #246B64 !important;
+}
 .bg-olive-green {
     background-color: #808f65 !important;
 }
@@ -1263,6 +1266,10 @@ a {
     transform: translate(-50%, -50%) !important;
 }
 
+.place-content-center {
+    place-content: center;
+}
+
 // margin
 .mt_5 {
     margin-top: 5px !important;
@@ -1278,6 +1285,9 @@ a {
 }
 .mt_40 {
     margin-top: 40px;
+}
+.mt--30 {
+    margin-top: -30px !important;
 }
 .mb_4 {
     margin-bottom: 4px;
@@ -1712,6 +1722,10 @@ a {
 .flat-spacing-34 {
     padding-top: 40px;
     padding-bottom: 124px;
+}
+.flat-spacing-35 {
+    padding-top: 120px;
+    padding-bottom: 103px;
 }
 
 .tf-overlay {

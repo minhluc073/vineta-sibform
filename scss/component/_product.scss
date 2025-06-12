@@ -1803,6 +1803,20 @@
             padding: 0px 10px 20px;
         }
     }
+    &.btn-brown {
+        .list-product-btn .box-icon {
+            &:hover {
+                background-color: #BB8F60 !important;
+                border-color: #BB8F60 !important;
+            }
+            .tooltip {
+                background-color: #BB8F60;
+                &::before {
+                    background-color: #BB8F60;
+                }
+            }
+        }
+    }
 }
 .list-color-product {
     display: flex;
