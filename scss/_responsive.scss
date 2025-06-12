@@ -1140,6 +1140,9 @@
             padding-top: 18px;
             gap: 10px;
             padding-bottom: 20px;
+            &.pt-35 {
+                padding-top: 35px;
+            }
         }
         &.style-3 {
             .list-product-btn {
@@ -1519,6 +1522,30 @@
 }
 
 @media (min-width: 1200px) {
+    .mt-xl-40 {
+        margin-top: 40px;
+    }
+    .footer-heading.mb-46 {
+        margin-bottom: 46px;
+    }
+    .skincare-product {
+        .tf-product-media-wrap {
+            padding-right: 8px;
+            .product-thumbs-slider {
+                gap: 11px;
+                .tf-product-media-thumbs {
+                    width: 109px;
+                    height: 588px;
+                    .item {
+                        height: 109px;
+                    }
+                }
+                .flat-wrap-media-product {
+                    width: calc(100% - 109px);
+                }
+            }
+        }
+    }
     .pickleball-product {
         .product-thumbs-slider {
             gap: 15px;
@@ -2973,6 +3000,68 @@
     }
 }
 @media (min-width: 1440px) {
+    .wrapper-lookbook-1.type-2 .col-left {
+        width: 50.4%;
+        padding: 48px 46px 27px 182px;
+    }
+    .section-results {
+        .tf-grid-layout {
+            gap: 122px;
+        }
+    }
+    .slider-skincare2 .content-slider {
+        gap: 48px;
+        .box-title-slider {
+            gap: 32px;
+        }
+    }
+    .footer-default.spacing-1 {
+        .row-footer .s3,
+        .row-footer .s2,
+        .row-footer .s1 {
+            padding-top: 100px;
+            padding-bottom: 89px;
+        }
+        .row-footer .s1 {
+            width: 34.375%;
+        }
+        .row-footer .s2 {
+            width: 36.875%;
+            padding-right: 0;
+            padding-left: 132px;
+        }
+        .row-footer .s3 {
+            padding-left: 0;
+            gap: 0;
+            justify-content: space-between;
+            width: 25.41%;
+        }
+        .footer-heading {
+            margin-bottom: 32px;
+        }
+        .footer-bottom-wrap {
+            padding: 24px 0;
+            p,
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .form-newsletter .subscribe-button.h56 {
+            height: 56px;
+        }
+    }
+    .wrapper-thumbs-tes.type-2 {
+        .box-right {
+            padding-left: 120px;
+        }
+        .box-testimonial-main {
+            gap: 20px;
+            .content {
+                gap: 32px;
+            }
+        }
+    }
     .wrapper-lookbook-1 {
         .col-right {
             width: 49.31%;
@@ -3123,9 +3212,6 @@
         .content-slider {
             margin-left: 52px;
         }
-    }
-    .slider-supplement {
-        margin: 0px 40px;
     }
 
     .tf-grid-layout {
@@ -3312,7 +3398,24 @@
     }
 }
 
+@media (min-width: 767px) and (max-width: 1199px) {
+    .row-footer .s3.border-0 {
+        grid-column: unset;
+    }
+    .row-footer .s2.border-0 {
+        grid-column: 1 / -1;
+        .form-newsletter {
+            max-width: unset;
+        }
+    }
+}
+
 @media (max-width: 1199px) {
+   
+    .slider-jewelry {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .wrapper-thumbs-tes-3.type-1 .box-left {
         padding-right: 0;
         padding-left: 40px;
@@ -3626,6 +3729,20 @@
 }
 
 @media (max-width: 991px) {
+    .slider-jewelry {
+        padding-left: 15px;
+        padding-right: 15px;
+        .heading {
+            font-size: 40px;
+            line-height: 52px;
+        }
+    }
+    .tf-product-info-wrap .tf-product-total-quantity .group-btn.type-1 {
+        flex-wrap: wrap;
+        .btn-add-to-cart {
+            order: 1;
+        }
+    }
     .banner-glasses .box-content {
         padding: 24px 30px;
     }
@@ -3833,6 +3950,12 @@
 }
 
 @media (max-width: 767px) {
+    .wrapper-thumbs-tes {
+        &.type-2 .box-right {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
     .wrapper-lookbook-1.type-1 .col-left {
         padding-top: 24px;
     }
@@ -3873,14 +3996,6 @@
         }
         .results-item {
             margin-bottom: 20px;
-        }
-    }
-    .slider-jewelry {
-        padding-left: 15px;
-        padding-right: 15px;
-        .heading {
-            font-size: 40px;
-            line-height: 52px;
         }
     }
     .section-cls-tabs {
@@ -4945,6 +5060,12 @@
 }
 
 @media (max-width: 575px) {
+    .grid-cls-v2 {
+        grid-template-columns: 1fr;
+        > * {
+            height: 330px;
+        }
+    }
     .tf-main-success .ship-address-item {
         margin-bottom: 24px;
         .title {

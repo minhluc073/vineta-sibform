@@ -741,6 +741,18 @@
 
   /* Total Price Variant
   ------------------------------------------------------------------------------------- */
+  var total_Price = function () {
+    $(".tf-cart-item").each(function () {
+      var productItem = $(this);
+      var price = parseFloat(productItem.find(".price-on-sale").text().replace("$", ""));
+      var quantity = productItem.find(".quantity-product").val();
+      var totalPrice = price * quantity;
+      
+      productItem.find(".total-price").text(
+        "$" + totalPrice.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      );
+    });
+  }
   var totalPriceVariant = function () {
     $(".tf-product-info-list,.tf-cart-item").each(function () {
       var productItem = $(this);
@@ -1559,6 +1571,7 @@
     handleSliderViewPort();
     tabSlide();
     infiniteSlide();
+    total_Price();
     preloader();
     goTop();
     new WOW().init();

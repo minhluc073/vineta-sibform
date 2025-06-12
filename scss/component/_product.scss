@@ -1457,8 +1457,8 @@
             align-items: flex-start;
             gap: 11px;
             max-width: max-content;
-            padding-top: 24px;
-            // border-top: 1px solid var(--line);
+            padding-top: 14px;
+            padding-bottom: 30px;
             margin-left: auto;
             margin-right: auto;
             .item {
@@ -1466,6 +1466,9 @@
                 gap: 10px;
                 align-items: center;
                 justify-content: center;
+                svg {
+                    flex-shrink: 0;
+                }
             }
             &.pb-30 {
                 padding-bottom: 30px;

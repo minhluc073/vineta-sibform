@@ -175,6 +175,14 @@
             color: var(--white);
             border: transparent;
         }
+        &.style-2 {
+            a {
+                border: 1px solid var(--line);
+                width: 52px;
+                height: 52px;
+                font-size: 22px;
+            }
+        }
     }
     &.style-default {
         gap: 20px;

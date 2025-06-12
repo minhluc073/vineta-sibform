@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png">
@@ -1061,6 +1060,11 @@
                 "slidesPerView": 1,
                 "spaceBetween": 0,
                 "loop": true,
+                "autoplay": { 
+                    "delay": 7000,
+                    "disableOnInteraction": false,
+                    "pauseOnMouseEnter": true
+                },
                 "centeredSlides": true,
                 "speed": 800,
                 "pagination": { "el": ".sw-pagination-slider", "clickable": true },
@@ -1205,7 +1209,7 @@
         </section>
         <!-- /Banner With Text -->
         <!-- Best Seller -->
-        <section class="flat-spacing-2 bg-yellow-6">
+        <section class="flat-spacing-3 bg-yellow-6">
             <div class="container">
                 <div class="flat-animate-tab flat-controltab-nav">
                     <div class="flat-title">
@@ -1226,26 +1230,26 @@
                     <div class="tab-content">
                         <div class="tab-pane active show" id="arrivals" role="tabpanel">
                             <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-                                    "slidesPerView": 2,
-                                    "spaceBetween": 12,
-                                    "speed": 800,
-                                    "observer": true,
-                                    "observeParents": true,
-                                    "slidesPerGroup": 1,
-                                    "navigation": {
-                                        "clickable": true,
-                                        "nextEl": ".nav-next-arrival",
-                                        "prevEl": ".nav-prev-arrival"
-                                    },
-                                    "pagination": { "el": ".sw-pagination-arrival", "clickable": true },
-                                    "breakpoints": {
-                                    "768": { "slidesPerView": 3, "spaceBetween": 24, "slidesPerGroup": 1 },
-                                    "1200": { "slidesPerView": 4, "spaceBetween": 24, "slidesPerGroup": 1}
-                                    }
-                                }'>
+                                "slidesPerView": 2,
+                                "spaceBetween": 12,
+                                "speed": 800,
+                                "observer": true,
+                                "observeParents": true,
+                                "slidesPerGroup": 1,
+                                "navigation": {
+                                    "clickable": true,
+                                    "nextEl": ".nav-next-seller",
+                                    "prevEl": ".nav-prev-seller"
+                                },
+                                "pagination": { "el": ".sw-pagination-seller", "clickable": true },
+                                "breakpoints": {
+                                "768": { "slidesPerView": 3, "spaceBetween": 24, "slidesPerGroup": 1 },
+                                "1200": { "slidesPerView": 4, "spaceBetween": 24, "slidesPerGroup": 1}
+                                }
+                            }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1300,7 +1304,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1355,7 +1359,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1410,7 +1414,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1465,7 +1469,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1520,7 +1524,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1575,13 +1579,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex d-xl-none sw-dot-default sw-pagination-hot justify-content-center">
+                                <div
+                                    class="d-flex d-xl-none sw-dot-default sw-pagination-seller justify-content-center">
                                 </div>
                             </div>
                             <div class="box-nav-swiper">
-                                <div class="swiper-button-prev d-xl-flex style-1 nav-swiper nav-prev-arrival relative">
+                                <div class="swiper-button-prev d-xl-flex style-1 nav-swiper nav-prev-seller relative">
                                 </div>
-                                <div class="swiper-button-next d-xl-flex style-1 nav-swiper nav-next-arrival relative">
+                                <div class="swiper-button-next d-xl-flex style-1 nav-swiper nav-next-seller relative">
                                 </div>
                             </div>
                         </div>
@@ -1606,7 +1611,7 @@
                                 }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1661,7 +1666,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1716,7 +1721,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1771,7 +1776,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1826,7 +1831,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1881,7 +1886,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -1968,7 +1973,7 @@
                                 }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -2023,7 +2028,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -2078,7 +2083,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -2133,7 +2138,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -2188,7 +2193,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -2243,7 +2248,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="card-product style-wishlist style-3 card-product-size none-hover">
+                                        <div class="card-product style-wishlist style-3 btn-brown card-product-size none-hover">
                                             <div class="card-product-wrapper">
                                                 <a href="product-detail.html" class="product-img">
                                                     <img class="img-product lazyload"
@@ -2414,7 +2419,7 @@
                             <div class="box-title gap-4">
                                 <div><a href="shop-default.html" class="link text-xl  fw-medium">Ceramic</a></div>
                                 <p class="text-xl text-grey-3">
-                                    10 items
+                                    15 items
                                 </p>
                             </div>
                         </div>
@@ -2428,7 +2433,7 @@
                             <div class="box-title gap-4">
                                 <div><a href="shop-default.html" class="link text-xl  fw-medium">Bamboo</a></div>
                                 <p class="text-xl text-grey-3">
-                                    10 items
+                                    20 items
                                 </p>
                             </div>
                         </div>
@@ -2438,11 +2443,11 @@
         </section>
         <!-- /Offer -->
         <!-- Testimonial -->
-        <div class="flat-spacing-2 bg-yellow-6">
+        <div class="flat-spacing-3 bg-yellow-6">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
-                        <div class="wrapper-thumbs-tes-3 flat-thumbs-tes tes-nav-style-1">
+                        <div class="wrapper-thumbs-tes-3 type-1 flat-thumbs-tes tes-nav-style-1">
                             <div class="swiper-button-prev d-none d-xl-flex nav-swiper nav-prev-tes"></div>
                             <div class="box-right">
                                 <div dir="ltr" class="swiper tf-thumb-tes" data-space-lg="24" data-space="12">
@@ -2462,7 +2467,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box-left wow fadeInUp">
+                            <div class="box-left wow fadeInUp py-0">
                                 <div dir="ltr" class="swiper tf-tes-main" data-space-lg="24" data-space="12">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -2493,16 +2498,16 @@
                                                         <i class="icon-star"></i>
                                                         <i class="icon-star"></i>
                                                     </div>
-                                                    <p class="text-review ">"Beautifully made and even more stunning in
+                                                    <p class="text-review text-dark-8">"Beautifully made and even more stunning in
                                                         person. The handmade quality adds such a special touch — you can
                                                         tell it was made with love."</p>
                                                     <div>
-                                                        <div class="name text-md fw-semibold mb_8">Vineta P</div>
+                                                        <div class="name text-md fw-semibold mb_8 text-dark-8">Vineta P</div>
                                                         <p
                                                             class="name-item text-md fs-14 d-flex align-items-center justify-content-center">
                                                             <span class="text-main">Product purchased: &nbsp;</span>
                                                             <a href="product-detail.html"
-                                                                class="fw-medium text-sm link text-line-clamp-1"> Woven
+                                                                class="fw-medium text-sm link text-line-clamp-1 text-dark-8"> Woven
                                                                 Shoulder Bag</a>
                                                         </p>
                                                     </div>
@@ -2537,19 +2542,19 @@
                                                         <i class="icon-star"></i>
                                                         <i class="icon-star"></i>
                                                     </div>
-                                                    <p class="text-review ">
+                                                    <p class="text-review text-dark-8">
                                                         I was pleasantly surprised by how fast my order arrived. The
                                                         customer
                                                         service team was helpful and responsive helpful and responsive.
                                                         Great shopping experience!
                                                     </p>
                                                     <div>
-                                                        <div class="name text-md fw-semibold mb_8">Themesflat</div>
+                                                        <div class="name text-md fw-semibold mb_8 text-dark-8">Themesflat</div>
                                                         <p
                                                             class="name-item text-md fs-14 d-flex align-items-center justify-content-center">
                                                             <span class="text-main">Product purchased: &nbsp;</span>
                                                             <a href="product-detail.html"
-                                                                class="fw-medium text-sm link text-line-clamp-1"> Loose
+                                                                class="fw-medium text-sm link text-line-clamp-1 text-dark-8"> Loose
                                                                 Fit Bag</a>
                                                         </p>
                                                     </div>
@@ -2568,7 +2573,7 @@
         </div>
         <!-- /Testimonial -->
         <!-- Latest Tip -->
-        <section class="flat-spacing-29">
+        <section class="flat-spacing-33">
             <div class="container">
                 <div class="flat-title wow fadeInUp">
                     <div class="title display-lg-3  fw-normal">Latest Tips & Trends</div>
@@ -2609,7 +2614,7 @@
                                         </div>
                                     </div>
                                     <div class="entry-content">
-                                        <div class="info-box">
+                                        <div class="info-box mb-0">
                                             <ul class="meta-list">
                                                 <li class="item ">by Admin</li>
                                                 <li class="item ">Jan 21, 2025</li>
@@ -2639,7 +2644,7 @@
                                         </div>
                                     </div>
                                     <div class="entry-content">
-                                        <div class="info-box">
+                                        <div class="info-box mb-0">
                                             <ul class="meta-list">
                                                 <li class="item ">by Vineta</li>
                                                 <li class="item ">Mar 10, 2025</li>
@@ -2669,7 +2674,7 @@
                                         </div>
                                     </div>
                                     <div class="entry-content">
-                                        <div class="info-box">
+                                        <div class="info-box mb-0">
                                             <ul class="meta-list">
                                                 <li class="item ">by Jack</li>
                                                 <li class="item ">Jan 15, 2025</li>
@@ -2699,7 +2704,7 @@
                                         </div>
                                     </div>
                                     <div class="entry-content">
-                                        <div class="info-box">
+                                        <div class="info-box mb-0">
                                             <ul class="meta-list">
                                                 <li class="item ">by Admin</li>
                                                 <li class="item ">Jan 21, 2025</li>
@@ -2901,116 +2906,35 @@
                                         We invite you to register to read the latest news, offers and events about
                                         our company. We promise not spam your inbox.
                                     </p>
-                                    <div class="sib-form">
-                                        <div id="sib-form-container" class="sib-form-container">
-                                            <div id="error-message" class="sib-form-message-panel">
-                                                <div
-                                                    class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                                    <span class="sib-form-message-panel__inner-text">Your subscription
-                                                        could not be saved. Please try again.
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="success-message" class="sib-form-message-panel">
-                                                <div
-                                                    class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                                    <span class="sib-form-message-panel__inner-text">Your subscription
-                                                        has been successful.
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="sib-container"
-                                                class="sib-container--large sib-container--vertical">
-                                                <form id="sib-form" method="POST" class="form-newsletter"
-                                                    action="https://3c02c1a1.sibforms.com/serve/MUIFAJqAmJ1r-9-6oGaX4uoBvwP0hlwYezUpuGWNLMl1Fd26Yuqeza4itBfViudv3o5IiTs34IhyGGpR3u821lD5dVskLiPw6XN9KtRy5CvmDj75857141ERQ9FKXtHPty7V8KYAUgKgTOv906xqY0rEG_reNR88R8xpH0aoS6WQ-5lXA1_ZioeDYB9dOJu11g7EJLdgHAieoeK5"
-                                                    data-type="subscription">
-                                                    <div>
-                                                        <div class="sib-form-block">
-                                                            <p></p>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="sib-form-block">
-                                                            <div class="sib-text-form-block">
-                                                                <p></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="sib-input sib-form-block">
-                                                            <div class="form__entry entry_block">
-                                                                <div class="form__label-row ">
-                                                                    <label class="entry__label" for="EMAIL"></label>
-                                                                    <fieldset class="entry__field">
-                                                                        <input class="input radius-60" type="text"
-                                                                            id="EMAIL" name="EMAIL" autocomplete="off"
-                                                                            placeholder="Enter your e-mail..."
-                                                                            data-required="true" required />
-                                                                    </fieldset>
-                                                                </div>
-                                                                <label
-                                                                    class="entry__error entry__error--primary"></label>
-                                                                <label class="entry__specification"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="sib-optin sib-form-block">
-                                                            <div class="form__entry entry_mcq">
-                                                                <div class="form__label-row ">
-                                                                    <div class="entry__choice">
-                                                                        <label>
-                                                                            <input type="checkbox"
-                                                                                class="input_replaced" value="1"
-                                                                                id="OPT_IN" name="OPT_IN" />
-                                                                            <span
-                                                                                class="checkbox checkbox_tick_positive"></span>
-                                                                            <span>
-                                                                                <p></p>
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <label
-                                                                    class="entry__error entry__error--primary"></label>
-                                                                <label class="entry__specification"></label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="sib-form-block button-submit">
-                                                            <button
-                                                                class="sib-form-block__button sib-form-block__button-with-loader subscribe-button radius-60"
-                                                                form="sib-form" type="submit">
-                                                                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
-                                                                    viewBox="0 0 512 512">
-                                                                    <path
-                                                                        d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                                                </svg>
-                                                                <svg width="18" height="18" viewBox="0 0 18 18"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <g clip-path="url(#clip0_5296_3345)">
-                                                                        <path
-                                                                            d="M17.7938 8.50229L17.7931 8.50162L14.1192 4.84537C13.8439 4.57147 13.3988 4.57249 13.1248 4.84776C12.8508 5.123 12.8519 5.56818 13.1271 5.84212L15.5938 8.29687H0.703125C0.314789 8.29687 0 8.61166 0 9C0 9.38833 0.314789 9.70312 0.703125 9.70312H15.5938L13.1272 12.1579C12.8519 12.4318 12.8509 12.877 13.1248 13.1522C13.3988 13.4275 13.844 13.4285 14.1192 13.1546L17.7932 9.49837L17.7938 9.4977C18.0692 9.22285 18.0683 8.77623 17.7938 8.50229Z"
-                                                                            fill="white"></path>
-                                                                    </g>
-                                                                    <defs>
-                                                                        <clipPath id="clip0_5296_3345">
-                                                                            <rect width="18" height="18" fill="white">
-                                                                            </rect>
-                                                                        </clipPath>
-                                                                    </defs>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <input type="text" name="email_address_check" value=""
-                                                        class="input--hidden">
-                                                    <input type="hidden" name="locale" value="en">
-                                                </form>
+                                    <form action="#" class="form-newsletter" id="subscribe-form" method=" post"
+                                        accept-charset="utf-8" data-mailchimp="true">
+                                        <div id="subscribe-content" class="subscribe-content">
+                                            <fieldset class="email">
+                                                <input type="email" name="email-form" id="subscribe-email"
+                                                    class="subscribe-email" placeholder="Email address" tabindex="0"
+                                                    aria-required="true" required>
+                                            </fieldset>
+                                            <div class="button-submit">
+                                                <button id="subscribe-button" class="subscribe-button animate-btn"
+                                                    type="button">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_5296_3345)">
+                                                            <path
+                                                                d="M17.7938 8.50229L17.7931 8.50162L14.1192 4.84537C13.8439 4.57147 13.3988 4.57249 13.1248 4.84776C12.8508 5.123 12.8519 5.56818 13.1271 5.84212L15.5938 8.29687H0.703125C0.314789 8.29687 0 8.61166 0 9C0 9.38833 0.314789 9.70312 0.703125 9.70312H15.5938L13.1272 12.1579C12.8519 12.4318 12.8509 12.877 13.1248 13.1522C13.3988 13.4275 13.844 13.4285 14.1192 13.1546L17.7932 9.49837L17.7938 9.4977C18.0692 9.22285 18.0683 8.77623 17.7938 8.50229Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_5296_3345">
+                                                                <rect width="18" height="18" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div id="subscribe-msg"></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -3552,10 +3476,10 @@
                             <input type="text" placeholder="Last name">
                         </fieldset>
                         <fieldset class="email mb_12">
-                            <input type="email" placeholder="Email*">
+                            <input type="email" placeholder="Email*" required>
                         </fieldset>
                         <fieldset class="password">
-                            <input type="password" placeholder="Password*">
+                            <input type="password" placeholder="Password*" required>
                         </fieldset>
                     </div>
                     <div class="bot">
@@ -3587,7 +3511,7 @@
                         <p class="text text-sm text-main-2">Forgot your password? No worries! Enter your registered
                             email to receive a link and securely reset it in just a few steps.</p>
                         <fieldset class="email mb_12">
-                            <input type="email" placeholder="Enter Your Email*">
+                            <input type="email" placeholder="Enter Your Email*" required>
                         </fieldset>
                     </div>
                     <div class="bot">
@@ -4390,25 +4314,6 @@
     <script src="js/multiple-modal.js"></script>
     <script src="js/infinityslide.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/sibforms.js" defer></script>
-    <script>
-        window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-        window.LOCALE = 'en';
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-
-        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-        window.translation = {
-            common: {
-                selectedList: '{quantity} list selected',
-                selectedLists: '{quantity} lists selected'
-            }
-        };
-
-        var AUTOHIDE = Boolean(0);
-    </script>
 </body>
 
 </html>

@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png">
@@ -1873,10 +1872,10 @@
                             <input type="text" placeholder="Last name">
                         </fieldset>
                         <fieldset class="email mb_12">
-                            <input type="email" placeholder="Email*">
+                            <input type="email" placeholder="Email*" required>
                         </fieldset>
                         <fieldset class="password">
-                            <input type="password" placeholder="Password*">
+                            <input type="password" placeholder="Password*" required>
                         </fieldset>
                     </div>
                     <div class="bot">
@@ -1908,7 +1907,7 @@
                         <p class="text text-sm text-main-2">Forgot your password? No worries! Enter your registered
                             email to receive a link and securely reset it in just a few steps.</p>
                         <fieldset class="email mb_12">
-                            <input type="email" placeholder="Enter Your Email*">
+                            <input type="email" placeholder="Enter Your Email*" required>
                         </fieldset>
                     </div>
                     <div class="bot">
@@ -2887,25 +2886,6 @@
     <script src="js/multiple-modal.js"></script>
 
     <script src="js/main.js"></script>
-    <script src="js/sibforms.js" defer></script>
-    <script>
-        window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-        window.LOCALE = 'en';
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-
-        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-        window.translation = {
-            common: {
-                selectedList: '{quantity} list selected',
-                selectedLists: '{quantity} lists selected'
-            }
-        };
-
-        var AUTOHIDE = Boolean(0);
-    </script>
 </body>
 
 </html>

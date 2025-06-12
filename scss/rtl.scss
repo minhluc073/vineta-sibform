@@ -18,7 +18,9 @@
 
 .rtl {
 
+    .slider-jewelry .icon-arrow-right,
     .wg-offer .icon-arrow-right,
+    .skincare-product .icon-arrow-right,
     .pickleball-product .icon-arrow-right,
     .section-cls-tabs .nav-tab-item .tab-link .icon {
         transform: rotateY(180deg);
@@ -294,7 +296,7 @@
             right: unset !important;
             .subscribe-button svg,
             .subscribe-button .icon {
-                transform: rotate(180deg);
+                transform: rotateY(180deg);
             }
             &.end-0 {
                 left: 0;
@@ -739,6 +741,10 @@
         .box-nav-menu .mega-menu {
             left: 0;
             right: 0;
+        }
+        .wrapper-thumbs-tes.type-2 .box-right {
+            padding-left: 60px;
+            padding-right: 120px;
         }
     }
 }

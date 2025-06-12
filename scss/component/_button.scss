@@ -697,3 +697,21 @@ button.animate-btn::after,
         }
     }
 }
+
+.hv-line-under {
+    position: relative;
+    width: max-content;
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: transparent;
+        @include transition3();
+    }
+    &:hover::after {
+        background-color: #1F1F1F;
+    }
+}

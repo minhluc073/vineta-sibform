@@ -399,6 +399,7 @@
         }
     }
     .col-left {
+        padding-top: 24px;
         padding-bottom: 24px;
     }
     .card-product {
@@ -453,8 +454,8 @@
 .wrapper-lookbook-1 {
     .image-lookbook {
         .pin-1 {
-            left: 63%;
-            bottom: 30%;
+            left: 63% !important;
+            bottom: 30% !important;
         }
         .pin-2 {
             left: 49%;
