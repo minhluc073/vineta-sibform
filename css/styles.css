@@ -106,7 +106,7 @@
 /*---------- Reset css styles ----------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -2619,11 +2619,78 @@ a:focus, a:hover {
   position: relative;
 }
 
+.modal-newsletter .sib-form .form-newsletter fieldset .input {
+  padding-left: 66px;
+}
+
+.rtl .modal-newsletter .sib-form .form-newsletter fieldset .input {
+  padding-right: 66px;
+  padding-left: 20px;
+}
+
+#pop-up {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+#pop-up.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.over-play {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#pop-up .close-icon {
+  position: absolute;
+  display: flex;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#pop-up .wrap {
+  position: relative;
+  display: flex;
+  margin: 15px;
+  width: 100%;
+  max-width: 1280px;
+  max-height: 720px;
+}
+
+#pop-up a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+@media only screen and (max-width: 767px) {
+  #pop-up .close-icon {
+    top: 15px;
+    right: 15px;
+  }
+  #pop-up .close-icon svg {
+    width: 16px;
+  }
+}
 /*------------ Components ---------------- */
 /*------------ button ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -3414,7 +3481,7 @@ button.animate-btn::after,
 /*------------ hover ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -3648,7 +3715,7 @@ button.animate-btn::after,
 /*------------ form ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -4150,7 +4217,7 @@ button.animate-btn::after,
 /*------------ drop down ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -4610,7 +4677,7 @@ button.animate-btn::after,
 /*------------ carousel ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -5106,7 +5173,7 @@ button.animate-btn::after,
 /*------------ pop up ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -6728,7 +6795,7 @@ button.animate-btn::after,
 /*------------ box icon ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -7107,7 +7174,7 @@ button.animate-btn::after,
 /*------------ tabs ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -7483,7 +7550,7 @@ button.animate-btn::after,
 /*------------ header ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -8777,7 +8844,7 @@ header.header-bg {
 /*------------ footer ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -9125,7 +9192,7 @@ header.header-bg {
 /*------------ blog ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -9482,7 +9549,7 @@ header.header-bg {
 /*------------ slider banner ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -9929,7 +9996,7 @@ header.header-bg {
 /*------------ collection ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -10539,7 +10606,7 @@ header.header-bg {
 /*------------ product ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -13011,7 +13078,7 @@ header.header-bg {
 /*------------ testimonial ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -13326,7 +13393,7 @@ header.header-bg {
 /*------------ lookbook ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -13824,7 +13891,7 @@ header.header-bg {
 /*------------ brand ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -13994,7 +14061,7 @@ header.header-bg {
 /*------------ zoom ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -14114,7 +14181,7 @@ header.header-bg {
 /*------------ shop ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -15000,7 +15067,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ shop ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -16221,7 +16288,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ account ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -16519,7 +16586,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*------------ sections ---------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -18042,7 +18109,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /*-------------- Responsive ----------------- */
 /* ---------------------------------------------------------
     * Name: Vineta - Multipurpose eCommerce
-    * Version: 1.0.1
+    * Version: 1.0.2
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 

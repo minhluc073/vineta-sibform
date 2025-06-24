@@ -691,19 +691,32 @@
   /* Auto Popup
   ------------------------------------------------------------------------------------- */
   var autoPopup = function () {
-    if ($(".auto-popup").length > 0) {
-        let pageKey = "showPopup_" + window.location.pathname; 
-        let showPopup = sessionStorage.getItem(pageKey);
+    // if ($(".auto-popup").length > 0) {
+    //     let pageKey = "showPopup_" + window.location.pathname; 
+    //     let showPopup = sessionStorage.getItem(pageKey);
 
-        if (!JSON.parse(showPopup)) {
-            setTimeout(function () {
-                $(".auto-popup").modal("show");
-            }, 3000);
-        }
+    //     if (!JSON.parse(showPopup)) {
+    //         setTimeout(function () {
+    //             $(".auto-popup").modal("show");
+    //         }, 3000);
+    //     }
         
-        $(".btn-hide-popup").on("click", function () {
-            sessionStorage.setItem(pageKey, true); 
-        });
+    //     $(".btn-hide-popup").on("click", function () {
+    //         sessionStorage.setItem(pageKey, true); 
+    //     });
+    // }
+
+    if ($("#pop-up").length > 0) {
+      setTimeout(function () {
+          $("#pop-up").addClass("show");
+      }, 3000);
+      
+      $(".close-pop-up").on("click", function () {
+        $("#pop-up").removeClass("show");
+        setTimeout(function () {
+          $(".auto-popup").modal("show");
+        }, 120000);
+      });
     }
   };
 
